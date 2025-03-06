@@ -3,13 +3,10 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Задача 1");
         int[] one = new int[3];
-        one[0] = 1;
-        one[1] = 2;
-        one[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            System.out.print(one[i]);
-            System.out.println();
+        for (int l = 0; l < one.length; l++) {
+            one[l] = l + 1;
         }
+        System.out.println(Arrays.toString(one));
         float[] two = {1.57f, 7.654f, 9.986f};
         two[0] = 1.57f;
         for (int y = 0; y < two.length; y++) {
